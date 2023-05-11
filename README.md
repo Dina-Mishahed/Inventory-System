@@ -14,10 +14,10 @@ This project is an inventory management system that allows you to store and mana
 
 Before running the project, ensure that you have the following dependencies installed:
 
-- Web server (e.g., Apache, Nginx)
-- PHP (version X.X.X)
-- MySQL (version X.X.X)
-- Web browser (e.g., Chrome, Firefox)
+- Web server (e.g., Apache)
+- PHP
+- MySQL
+- Web browser
 
 ## Installation
 
@@ -66,6 +66,6 @@ git clone https://github.com/Dina-Mishahed/Inventory-System.git
 - Inventory quantity notification:
   - If the quantity stored in the inventory becomes less than the minimum quantity, the manager will be notified.
 ## Demo
-<video width="560" height="315" controls>
-  <source src="https://github.com/Dina-Mishahed/Inventory-System/bandicam 2019-05-01 23-17-57-812.mp4" type="video/mp4">
-</video>
+https://github.com/Dina-Mishahed/Inventory-System/assets/53543119/7795ab12-cd80-445b-85d2-9355a65fcfe5
+
+
