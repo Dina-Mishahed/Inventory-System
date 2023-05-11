@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <style>
+             body, html {
+                          height:auto;
+                           width: auto;
+                        }
+                        body{
+                            font-size: 35px;
+                            width:auto;
+                            height: auto;
+                            font-style: oblique;
+                            font-weight: bold;
+
+
+                        }
+             table {  
+                     
+                     position:absolute;
+                      top:30%;
+                      left:40%; 
+                      width: 350px;
+                      height:450px;
+                       border-collapse: collapse;
+                    }
+
+                    th {
+                      height: 70px;
+                    }
+                     td {
+                      height: 45px;
+                         width: 40px
+                    }
+                    
+             input {
+                      width: 100%;
+                      height: 100%;
+                      font-size: 30px;
+                    }
+             input[type=text] {
+                                  font-size: 45px;
+                                  border: 2px solid black;
+                                  background-color:azure;
+                                  font-family: serif;
+                                  
+                                  border-radius: 10px;
+                              }
+             input[type=button]
+             {
+              background-color:cornflowerblue;
+              border: 1px solid black;
+              color: white;
+              display: inline-block;
+              
+              border-radius: 15px;
+             }
+             input[type=button]:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+              background-color:darkcyan;
+            }
+         </style>
+         <script type="text/javascript">
+            function dis(n1)
+             {
+               document.getElementById("disp").value=document.getElementById("disp").value+n1;
+             }
+         </script>
+     </head>
+     <body  background="b.jpg" style="background-repeat:no-repeat;background-size:100%">
+         <form name=”calculator”>
+             <table >
+                 <tr>
+                     <th colspan="4">
+                         <input type="text" name="disp" id="disp"  style="text-align: right" disabled>
+                     </th>
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="button" value="+" id="plus" class="operator" name="plus"
+                                onclick="dis(plus.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="-" id="Subtract" class="operator" name="Subtract"
+                                onclick="dis(Subtract.value)" >
+                     </td>
+                     <td>
+                         <input type="button" value="*"  id="Multiply" class="operator" name="Multiply"
+                                onclick="dis(Multiply.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="/" id="Dividing" class="operator" name="Dividing"
+                                onclick="dis(Dividing.value)">
+                     </td>
+                     
+                 </tr>
+                 <tr>
+                    
+                     <td>
+                         <input type="button" value="7" id="seven" name=seven onclick="dis(seven.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="8" id="eight" name="eight" onclick="dis(eight.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="9" id="nine" name="nine" onclick="dis(nine.value)">
+                     </td>
+                      <td rowspan="4">
+                         <input type="button" value="=" id="equal" name="equal" onclick="disp.value=eval(disp.value)"   >
+                     </td>
+                     
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="button" value="4" id="four" name="four" onclick="dis(four.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="5" id="five" name="five" onclick="dis(five.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="6" id="six" name="six" onclick="dis(six.value)">
+                     </td>
+                     
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="button" value="1" id="one"  name="one" onclick="dis(one.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="2" id="two" name="two" onclick="dis(two.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="3" id="three" name="three" onclick="dis(three.value)">
+                     </td>
+                     
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="button" value="0" id="0" name="zero" onclick="dis(zero.value)">
+                     </td>
+                     <td>
+                         <input type="button" value="." id="." name="dot" onclick="dis(dot.value)">
+                     </td>
+                     <td >
+                         <input type="button" value="AC" id="AC" onclick="disp.value=''">
+                     </td>  
+                    
+                 </tr>
+                 <tr>
+                     
+                 </tr>
+             </table>
+         </form>
+     </body>
+ </html>
